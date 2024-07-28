@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'prettier',
   ],
-  plugins: ['@typescript-eslint', 'react', 'prettier'],
+  plugins: ['react', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'arrow-body-style': ['error', 'as-nedded'],
