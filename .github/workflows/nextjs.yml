@@ -90,14 +90,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/download-artifact@master
-        with:
-          name: page
-          path: .
-      - uses: actions/configure-pages@v1
-      - uses: actions/upload-pages-artifact@v1
-        with:
-          path: .
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@4
