@@ -1,0 +1,22 @@
+.featureCard {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 0.8em;
+}
+/* .featureCard img{
+    transition: all 0.1s ease-in-out;
+}
+.featureCard:hover img{
+    transform: scale(1.1);
+} */
+.technologyModal::-webkit-scrollbar {
+  width: 0.5em;
+}
+.technologyModal::-webkit-scrollbar-track-piece {
+  width: 10px;
+}
+.technologyModal::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-gray-600);
+  border-radius: 1em;
+}

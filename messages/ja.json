@@ -1,0 +1,129 @@
+{
+  "About": {
+    "detail": {
+      "fullArsenal": "僕のすべてのスキルをご覧ください!",
+      "whatIDo": "僕のやっていることは何ですか?"
+    },
+    "skillSet": {
+      "modal": {
+        "header": "僕のすべてのスキルのリスト"
+      },
+      "skillList": {
+        "backend": "バックエンド",
+        "database": "データベース",
+        "frontend": "フロントエンド",
+        "note": "Beberapa mikro-framework mungkin tidak termasuk",
+        "productivityBoosts": "Produktivitas",
+        "uiFramework": "Framework UI"
+      }
+    }
+  },
+  "Experience": {
+    "experienceTab": {
+      "present": "今まで"
+    },
+    "main": {
+      "header": "Pengalaman Kerjaku."
+    }
+  },
+  "FeaturedWorks": {
+    "featuredCard": {
+      "viewProject": "Lihat Proyek",
+      "viewTechnology": "Lihat Teknologi"
+    },
+    "main": {
+      "description": "Lihat beberapa proyek yang telah aku kerjakan saat freelancing, proyek perusahaan, dan juga studi kasus.",
+      "header": "Beberapa Proyekku."
+    },
+    "technologySet": {
+      "modal": {
+        "header": "Teknologi"
+      },
+      "technologyList": {
+        "backend": "バックエンド",
+        "cicd": "CICD",
+        "database": "データベース",
+        "desktop": "Pengembangan Aplikasi Desktop",
+        "frontend": "フロントエンド",
+        "game": "Pengembangan Game",
+        "mobile": "Pengembangan Aplikasi Mobile",
+        "note": "Beberapa mikro-framework mungkin tidak termasuk",
+        "productivityBoosts": "Produktivitas",
+        "uiFramework": "Framerwork UI"
+      }
+    }
+  },
+  "GetInTouch": {
+    "sayHi": "Sapa aku!"
+  },
+  "Menu": {
+    "navigation": {
+      "about": "Tentang",
+      "contact": "Kontak",
+      "experience": "Pengalaman",
+      "works": "Pekerjaan"
+    }
+  },
+  "mode": {
+    "dark": "Malam",
+    "light": "Cerah"
+  },
+  "Month": {
+    "april": {
+      "long": "April",
+      "short": "Apr"
+    },
+    "august": {
+      "long": "Agustus",
+      "short": "Agu"
+    },
+    "december": {
+      "long": "Desember",
+      "short": "Des"
+    },
+    "february": {
+      "long": "Februari",
+      "short": "Feb"
+    },
+    "january": {
+      "long": "Januari",
+      "short": "Jan"
+    },
+    "july": {
+      "long": "Juli",
+      "short": "Jul"
+    },
+    "june": {
+      "long": "Juni",
+      "short": "Jun"
+    },
+    "march": {
+      "long": "Maret",
+      "short": "Mar"
+    },
+    "may": {
+      "long": "Mei",
+      "short": "Mei"
+    },
+    "november": {
+      "long": "November",
+      "short": "Nov"
+    },
+    "october": {
+      "long": "Oktober",
+      "short": "Okt"
+    },
+    "september": {
+      "long": "September",
+      "short": "Sep"
+    }
+  },
+  "Sidebar": {
+    "getInTouch": "Hubungi aku, ya!",
+    "hello": "Ooh, hai yang di sana! Aku",
+    "me": "Aku seorang software engineer yang fokus di backend API dan integrasi frontend. Akhir-akhir ini, aku juga sedang seru-serunya belajar UI/UX dan React.",
+    "nickname": "Tapi panggil saja Babas atau Nao. Itu lebih asyik . . .",
+    "thanks1": "Hai! Senang sekali kamu mengunjungi situs pribadiku, ",
+    "thanks2": "terima kasih!"
+  }
+}
