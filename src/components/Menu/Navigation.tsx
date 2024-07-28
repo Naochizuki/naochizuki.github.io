@@ -71,6 +71,16 @@ const Navigation = () => {
         />
         <MobileMenu isDarkMode={IsDark} toggle={toggleOpen} isOpen={isOpen} />
       </Box>
+      <Box
+        display={{ base: 'flex', xl: 'none' }}
+        alignItems="center"
+        paddingTop={1}
+        className={styles.menuBar}
+        zIndex={100}
+        top="3%"
+      >
+        <LocaleSwitcherSelect />
+      </Box>
 
       <MotionContainer
         width="100%"
