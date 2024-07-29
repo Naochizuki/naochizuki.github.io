@@ -1,37 +1,37 @@
-'use client';
+'use client'
 
-import { Link } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react'
 
-export type Company = 'Meiwa' | 'SC' | 'Risnov';
+export type Company = 'Meiwa' | 'SC' | 'Risnov'
 
 export type CompanyDetail = {
-  name: string;
-  longName: string;
-  subDetail?: string;
-  url?: string;
-  position: string;
-  start: string;
-  startYear: string;
-  end: string;
-  endYear: string;
+  name: string
+  longName: string
+  subDetail?: string
+  url?: string
+  position: string
+  start: string
+  startYear: string
+  end: string
+  endYear: string
   logo: {
-    light: string;
-    dark?: string;
-  };
+    light: string
+    dark?: string
+  }
   roles?: {
-    id: JSX.Element[];
-  };
-};
+    id: JSX.Element[]
+  }
+}
 
 export const Experiences: {
-  [key in Company]: CompanyDetail;
+  [key in Company]: CompanyDetail
 } = {
   Meiwa: {
     name: 'Meiwa Industry Co., Ltd.',
     longName: 'Meiwa Industry Co., Ltd.',
     subDetail: 'Internship',
     url: 'https://www.meiwa-industry.co.jp',
-    position: 'Software Engineer',
+    position: 'position.softwareEngineer',
     start: 'June',
     startYear: '2023',
     end: 'May',
@@ -73,7 +73,7 @@ export const Experiences: {
     longName: 'Scentregroup Limited AU',
     subDetail: 'MSIB Kampus Merdeka',
     url: 'https://startupcampus.id/studi-independen',
-    position: 'Backend Track Participants',
+    position: 'position.backendTrackParticipants',
     start: 'August',
     startYear: '2022',
     end: 'December',
@@ -102,7 +102,7 @@ export const Experiences: {
     longName: 'LPPM Universitas Sebelas Maret',
     subDetail: 'Universitas Sebelas Maret',
     url: 'https://risnov.uns.ac.id/id',
-    position: 'Junior Software Engineer',
+    position: 'position.juniorSoftwareEngineer',
     start: 'July',
     startYear: '2022',
     end: 'December',
@@ -136,6 +136,6 @@ export const Experiences: {
       ],
     },
   },
-};
+}
 
-export const ExperiencesList = [Experiences.Meiwa, Experiences.SC, Experiences.Risnov];
+export const ExperiencesList = [Experiences.Meiwa, Experiences.SC, Experiences.Risnov]

@@ -94,7 +94,7 @@ const ExperienceTab = () => {
             <SlideFade offsetY="20px" in>
               <Stack spacing={0}>
                 <Text as="span" fontSize="lg" fontWeight="bold" variant="description">
-                  {company.position}
+                  {t(company.position)}
                 </Text>
                 <Text as="span">
                   <Link

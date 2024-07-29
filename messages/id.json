@@ -25,9 +25,15 @@
   },
   "Experience": {
     "experienceTab": {
+      "position": {
+        "backendTrackParticipants": "Backend Track Participants",
+        "juniorSoftwareEngineer": "Junior Software Engineer",
+        "softwareEngineer": "Software Engineer"
+      },
       "present": "Sekarang"
     },
     "main": {
+      "description": "Sejak tahun 2022, aku memulai magang pertama untuk mengasah keterampilan dan menambah pengalaman. Meskipun masih terbilang singkat, aku sangat berterima kasih kepada perusahaan-perusahaan yang telah memberikan kesempatan untuk berkembang. Pengalaman ini sangat berharga dan memberikan fondasi kuat dalam perjalanan karierku.",
       "header": "Pengalaman Kerjaku."
     }
   },

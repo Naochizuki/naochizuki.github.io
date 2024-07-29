@@ -25,9 +25,15 @@
   },
   "Experience": {
     "experienceTab": {
+      "position": {
+        "backendTrackParticipants": "バックエンドトラックの参加者",
+        "juniorSoftwareEngineer": "ジュニアソフトウェアエンジニア",
+        "softwareEngineer": "ソフトウェアエンジニア"
+      },
       "present": "今まで"
     },
     "main": {
+      "description": "2022年から、スキルを磨き、経験を積むために初めてのインターンシップを始めました。期間はまだ短いですが、成長の機会を与えてくれた企業には非常に感謝しています。この経験はとても貴重で、キャリアの基盤を築くのに役立っています。",
       "header": "僕の職務経験"
     }
   },
