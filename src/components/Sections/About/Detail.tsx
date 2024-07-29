@@ -1,6 +1,6 @@
-'use client';
+'use client'
 
-import { memo } from 'react';
+import { memo } from 'react'
 import {
   Heading,
   Text,
@@ -13,7 +13,7 @@ import {
   Tooltip,
   Stack,
   useColorModeValue,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 import {
   SiLaravel,
   SiJavascript,
@@ -23,22 +23,22 @@ import {
   SiTailwindcss,
   SiMysql,
   SiExpress,
-} from 'react-icons/si';
+} from 'react-icons/si'
 
-import { GiCoffeePot } from 'react-icons/gi';
-import { IoMdOpen } from 'react-icons/io';
-import { useTranslations } from 'next-intl';
+import { GiCoffeePot } from 'react-icons/gi'
+import { IoMdOpen } from 'react-icons/io'
+import { useTranslations } from 'next-intl'
 
 type ISkillSetModal = {
-  onOpen: any;
-};
+  onOpen: any
+}
 
 const Detail = ({ onOpen }: ISkillSetModal) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200');
-  const currentYear = new Date().getFullYear();
-  const professionalYears = currentYear - 2022;
+  const emphasis = useColorModeValue('teal.500', 'cyan.200')
+  const currentYear = new Date().getFullYear()
+  const professionalYears = currentYear - 2022
 
-  const t = useTranslations('About.detail');
+  const t = useTranslations('About.detail')
 
   return (
     <Stack width={{ base: '100%', lg: '75%' }} spacing={{ base: 6, xl: 8 }} as="section">
@@ -53,37 +53,45 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         {t('whatIDo')}
       </Heading>
       <Text variant="description">
-        Aku adalah mahasiswa tingkat akhir jurusan{' '}
-        <Text as="span" variant="emphasis">
-          <b>S1 Informatika</b>
-        </Text>{' '}
-        di{' '}
-        <Text as="span" variant="emphasis">
-          <b>Universitas Sebelas Maret</b>
-        </Text>
-        . Aku sudah beberapa kali magang sebagai{' '}
-        <Text as="span" variant="emphasis">
-          <b>Software Engineer</b>
-        </Text>
-        , termasuk di{' '}
-        <Tooltip
-          label="Akhirnya aku bisa merasakan hidup di Jepang! Buatku, ini mimpi yang jadi nyata, apalagi sebagai mahasiswa dengan kondisi ekonomi pas-pasan"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis">
-            <b>Meiwa Industry Co., Ltd</b>
-          </Text>
-        </Tooltip>
-        . Jadi, bisa dibilang aku sudah punya pengalaman coding profesional selama{' '}
-        {professionalYears} tahun.
+        {t.rich('description', {
+          major: (chunks) => (
+            <Text as="span" variant="emphasis">
+              <b>{chunks}</b>
+            </Text>
+          ),
+          university: (chunks) => (
+            <Text as="span" variant="emphasis">
+              <b>{chunks}</b>
+            </Text>
+          ),
+          role: (chunks) => (
+            <Text as="span" variant="emphasis">
+              <b>{chunks}</b>
+            </Text>
+          ),
+          meiwa: (chunks) => (
+            <Tooltip
+              label="Akhirnya aku bisa merasakan hidup di Jepang! Buatku, ini mimpi yang jadi nyata, apalagi sebagai mahasiswa dengan kondisi ekonomi pas-pasan"
+              hasArrow
+            >
+              <Text as="span" variant="emphasis">
+                <b>{chunks}</b>
+              </Text>
+            </Tooltip>
+          ),
+          years: professionalYears,
+        })}
         <br /> <br />
-        Ini beberapa teknologi yang sering aku pakai, ibaratnya sudah jadi temen{' '}
-        <Tooltip label="Sebenernya aku lebih sering minum MilkTea, hehe" hasArrow>
-          <Text as="span" variant="emphasis" textDecorationLine="underline">
-            ngopi
-          </Text>
-        </Tooltip>{' '}
-        sehari-hari <Icon as={GiCoffeePot} color={emphasis} />.
+        {t.rich('technologyDescription', {
+          coffee: (chunks) => (
+            <Tooltip label="Sebenernya aku lebih sering minum MilkTea, hehe" hasArrow>
+              <Text as="span" variant="emphasis" textDecorationLine="underline">
+                {chunks}
+              </Text>
+            </Tooltip>
+          ),
+          icon: () => <Icon as={GiCoffeePot} color={emphasis} />,
+        })}
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
@@ -130,7 +138,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         </Box>
       </SimpleGrid>
     </Stack>
-  );
-};
+  )
+}
 
-export default memo(Detail);
+export default memo(Detail)

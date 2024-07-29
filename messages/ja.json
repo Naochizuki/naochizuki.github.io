@@ -1,7 +1,9 @@
 {
   "About": {
     "detail": {
+      "description": "僕は<university>セベラス・マレット大学</university>の<major>情報学部</major>の最終学年の学生です。<role>ソフトウェアエンジニア</role>として、<meiwa>メイワインダストリー株式会社</meiwa>を含むいくつかの企業でインターンシップを経験しました。ですから、僕はすでに{years}年間のプロフェッショナルなコーディング経験があります。",
       "fullArsenal": "僕のすべてのスキルをご覧ください!",
+      "technologyDescription": "これらは、僕がよく使う技術です。まるで毎日一緒に過ごす友達のようなものです。",
       "whatIDo": "僕のやっていることは何ですか?"
     },
     "skillSet": {
@@ -12,9 +14,9 @@
         "backend": "バックエンド",
         "database": "データベース",
         "frontend": "フロントエンド",
-        "note": "Beberapa mikro-framework mungkin tidak termasuk",
-        "productivityBoosts": "Produktivitas",
-        "uiFramework": "Framework UI"
+        "note": "いくつかのマイクロフレームワークは含まれていないかもしれません",
+        "productivityBoosts": "生産性",
+        "uiFramework": "UIフレームワーク"
       }
     }
   },
@@ -23,7 +25,7 @@
       "present": "今まで"
     },
     "main": {
-      "header": "Pengalaman Kerjaku."
+      "header": "僕の職務経験"
     }
   },
   "FeaturedWorks": {
@@ -47,9 +49,9 @@
         "frontend": "フロントエンド",
         "game": "Pengembangan Game",
         "mobile": "Pengembangan Aplikasi Mobile",
-        "note": "Beberapa mikro-framework mungkin tidak termasuk",
-        "productivityBoosts": "Produktivitas",
-        "uiFramework": "Framework UI"
+        "note": "いくつかのマイクロフレームワークは含まれていないかもしれません",
+        "productivityBoosts": "生産性",
+        "uiFramework": "UIフレームワーク"
       }
     }
   },

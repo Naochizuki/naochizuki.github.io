@@ -1,7 +1,9 @@
 {
   "About": {
     "detail": {
+      "description": "Aku adalah mahasiswa tingkat akhir jurusan <major>S1 Informatika</major> di <university>Universitas Sebelas Maret</university>. Aku sudah beberapa kali magang sebagai <role>Software Engineer</role>, termasuk di <meiwa>Meiwa Industry Co., Ltd</meiwa>. Jadi, bisa dibilang aku sudah punya pengalaman coding profesional selama {years} tahun.",
       "fullArsenal": "Intip semua keterampilan yang aku punya!",
+      "technologyDescription": "Ini beberapa teknologi yang sering aku pakai, ibaratnya sudah jadi temen <coffee>ngopi</coffee> sehari-hari <icon></icon>.",
       "whatIDo": "Apa yang aku lakukan?"
     },
     "skillSet": {
