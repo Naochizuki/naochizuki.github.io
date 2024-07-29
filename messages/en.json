@@ -69,54 +69,18 @@
     "light": "Cerah"
   },
   "Month": {
-    "april": {
-      "long": "April",
-      "short": "Apr"
-    },
-    "august": {
-      "long": "Agustus",
-      "short": "Agu"
-    },
-    "december": {
-      "long": "Desember",
-      "short": "Des"
-    },
-    "february": {
-      "long": "Februari",
-      "short": "Feb"
-    },
-    "january": {
-      "long": "Januari",
-      "short": "Jan"
-    },
-    "july": {
-      "long": "Juli",
-      "short": "Jul"
-    },
-    "june": {
-      "long": "Juni",
-      "short": "Jun"
-    },
-    "march": {
-      "long": "Maret",
-      "short": "Mar"
-    },
-    "may": {
-      "long": "Mei",
-      "short": "Mei"
-    },
-    "november": {
-      "long": "November",
-      "short": "Nov"
-    },
-    "october": {
-      "long": "Oktober",
-      "short": "Okt"
-    },
-    "september": {
-      "long": "September",
-      "short": "Sep"
-    }
+    "april": "{format, select, long {April} short {Apr} other {April}}",
+    "august": "{format, select, long {Agustus} short {Agu} other {Agustus}}",
+    "december": "{format, select, long {Desember} short {Des} other {Desember}}",
+    "february": "{format, select, long {Februari} short {Feb} other {Februari}}",
+    "january": "{format, select, long {Januari} short {Jan} other {Januari}}",
+    "july": "{format, select, long {Juli} short {Jul} other {Juli}}",
+    "june": "{format, select, long {Juni} short {Jun} other {Juni}}",
+    "march": "{format, select, long {Maret} short {Mar} other {Maret}}",
+    "may": "{format, select, long {Mei} short {Mei} other {Mei}}",
+    "november": "{format, select, long {November} short {Nov} other {November}}",
+    "october": "{format, select, long {Oktober} short {Okt} other {Oktober}}",
+    "september": "{format, select, long {September} short {Sep} other {September}}"
   },
   "Sidebar": {
     "getInTouch": "Hubungi aku, ya!",

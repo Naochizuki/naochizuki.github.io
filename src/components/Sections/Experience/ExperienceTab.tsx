@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import {
   Text,
@@ -18,23 +18,23 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useColorMode,
-} from '@chakra-ui/react';
-import { useTranslations, useLocale } from 'next-intl';
-import { BiRightArrow } from 'react-icons/bi';
-import styles from '@/components/Sections/Experience/styles.module.css';
-import { ExperiencesList } from '@/config/experience';
-import { mobileBreakpointsMap } from '@/config/theme';
+} from '@chakra-ui/react'
+import { useTranslations, useLocale } from 'next-intl'
+import { BiRightArrow } from 'react-icons/bi'
+import styles from '@/components/Sections/Experience/styles.module.css'
+import { ExperiencesList } from '@/config/experience'
+import { mobileBreakpointsMap } from '@/config/theme'
 
 const ExperienceTab = () => {
-  const { colorMode } = useColorMode();
-  const emphasis = useColorModeValue('teal.500', 'cyan.200');
-  const borderColor = useColorModeValue('gray.300', 'gray.600');
-  const activeBordercolor = useColorModeValue('teal.500', '#97DFFC');
-  const isMobile = useBreakpointValue(mobileBreakpointsMap);
+  const { colorMode } = useColorMode()
+  const emphasis = useColorModeValue('teal.500', 'cyan.200')
+  const borderColor = useColorModeValue('gray.300', 'gray.600')
+  const activeBordercolor = useColorModeValue('teal.500', '#97DFFC')
+  const isMobile = useBreakpointValue(mobileBreakpointsMap)
 
-  const tMonth = useTranslations('Month');
-  const t = useTranslations('Experience.experienceTab');
-  const locale = useLocale();
+  const tMonth = useTranslations('Month')
+  const t = useTranslations('Experience.experienceTab')
+  const locale = useLocale()
 
   const tabOrientation =
     useBreakpointValue({
@@ -43,7 +43,7 @@ const ExperienceTab = () => {
       md: 'vertical',
       lg: 'vertical',
       xl: 'vertical',
-    }) ?? ('vertical' as any);
+    }) ?? ('vertical' as any)
 
   const tabMinWidth = useBreakpointValue({
     base: '160px',
@@ -51,7 +51,7 @@ const ExperienceTab = () => {
     md: 'auto',
     lg: 'auto',
     xl: 'auto',
-  });
+  })
   return (
     <Tabs id="experienceTabs" orientation={tabOrientation} isLazy>
       <TabList
@@ -112,12 +112,14 @@ const ExperienceTab = () => {
                     {company.subDetail}
                   </Text>
                 </Text>
-                <Text fontSize="smaller">{`${tMonth(`${company.start.toLowerCase()}.long`)} ${
-                  company.startYear
-                } - ${
+                <Text fontSize="smaller">{`${tMonth(`${company.start.toLowerCase()}`, {
+                  format: 'long',
+                })} ${company.startYear} - ${
                   company.end === 'present'
                     ? t('present')
-                    : `${tMonth(`${company.end.toLowerCase()}.long`)} ${company.endYear}`
+                    : `${tMonth(`${company.end.toLowerCase()}`, { format: 'long' })} ${
+                        company.endYear
+                      }`
                 }`}</Text>
               </Stack>
               <List spacing={3} pt={5}>
@@ -136,10 +138,10 @@ const ExperienceTab = () => {
                           {roleDesc}
                         </Text>
                       </ListItem>
-                    ));
+                    ))
                   }
 
-                  return <span key={roles[1][0]}></span>;
+                  return <span key={roles[1][0]}></span>
                 })}
               </List>
             </SlideFade>
@@ -147,7 +149,7 @@ const ExperienceTab = () => {
         ))}
       </TabPanels>
     </Tabs>
-  );
-};
+  )
+}
 
-export default ExperienceTab;
+export default ExperienceTab

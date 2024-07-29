@@ -1,11 +1,11 @@
-'use client';
+'use client'
 
-import { memo } from 'react';
-import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react';
-import { motion, Variants } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { RiCopyrightLine, RiGithubFill } from 'react-icons/ri';
-import { useTranslations } from 'next-intl';
+import { memo } from 'react'
+import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react'
+import { motion, Variants } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { RiCopyrightLine, RiGithubFill } from 'react-icons/ri'
+import { useTranslations } from 'next-intl'
 
 const rimuruVariant: Variants = {
   shake: {
@@ -26,12 +26,12 @@ const rimuruVariant: Variants = {
       ease: 'easeInOut',
     },
   },
-};
+}
 
 const GetInTouch = () => {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView()
 
-  const t = useTranslations('GetInTouch');
+  const t = useTranslations('GetInTouch')
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -58,13 +58,13 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Meskipun aku agak introvert, aku tetap akan membalas pesan selama energi interaksi sosialku
-        masih ada. Coding, pekerjaan, film, atau bahkan hal-hal terkait anime, semuanya oke. Jadi,
-        jangan ragu untuk menghubungiku di media sosial atau kirim{' '}
-        <Link href="mailto:basugandhisasangka10m@gmail.com" target="_blank" rel="noreferrer">
-          email
-        </Link>
-        .
+        {t.rich('goodBye', {
+          email: (chunks) => (
+            <Link href="mailto:basugandhisasangka10m@gmail.com" target="_blank" rel="noreferrer">
+              {chunks}
+            </Link>
+          ),
+        })}
       </Text>
 
       <Box
@@ -88,7 +88,7 @@ const GetInTouch = () => {
         </Link>
       </Box>
     </Stack>
-  );
-};
+  )
+}
 
-export default memo(GetInTouch);
+export default memo(GetInTouch)

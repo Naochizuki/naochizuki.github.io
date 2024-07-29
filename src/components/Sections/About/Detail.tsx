@@ -70,10 +70,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             </Text>
           ),
           meiwa: (chunks) => (
-            <Tooltip
-              label="Akhirnya aku bisa merasakan hidup di Jepang! Buatku, ini mimpi yang jadi nyata, apalagi sebagai mahasiswa dengan kondisi ekonomi pas-pasan"
-              hasArrow
-            >
+            <Tooltip label={t('tooltip.meiwa')} hasArrow>
               <Text as="span" variant="emphasis">
                 <b>{chunks}</b>
               </Text>

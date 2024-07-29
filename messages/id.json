@@ -4,6 +4,9 @@
       "description": "Aku adalah mahasiswa tingkat akhir jurusan <major>S1 Informatika</major> di <university>Universitas Sebelas Maret</university>. Aku sudah beberapa kali magang sebagai <role>Software Engineer</role>, termasuk di <meiwa>Meiwa Industry Co., Ltd</meiwa>. Jadi, bisa dibilang aku sudah punya pengalaman coding profesional selama {years} tahun.",
       "fullArsenal": "Intip semua keterampilan yang aku punya!",
       "technologyDescription": "Ini beberapa teknologi yang sering aku pakai, ibaratnya sudah jadi temen <coffee>ngopi</coffee> sehari-hari <icon></icon>.",
+      "tooltip": {
+        "meiwa": "Akhirnya aku bisa merasakan hidup di Jepang! Buatku, ini mimpi yang jadi nyata, apalagi sebagai mahasiswa dengan kondisi ekonomi pas-pasan"
+      },
       "whatIDo": "Apa yang aku lakukan?"
     },
     "skillSet": {
@@ -56,6 +59,7 @@
     }
   },
   "GetInTouch": {
+    "goodBye": "Meskipun aku agak introvert, aku tetap akan membalas pesan selama energi interaksi sosialku masih ada. Coding, pekerjaan, film, atau bahkan hal-hal terkait anime, semuanya oke. Jadi, jangan ragu untuk menghubungiku di media sosial atau kirim <email>email</email>.",
     "sayHi": "Sapa aku!"
   },
   "Menu": {
@@ -71,61 +75,29 @@
     "light": "Cerah"
   },
   "Month": {
-    "april": {
-      "long": "April",
-      "short": "Apr"
-    },
-    "august": {
-      "long": "Agustus",
-      "short": "Agu"
-    },
-    "december": {
-      "long": "Desember",
-      "short": "Des"
-    },
-    "february": {
-      "long": "Februari",
-      "short": "Feb"
-    },
-    "january": {
-      "long": "Januari",
-      "short": "Jan"
-    },
-    "july": {
-      "long": "Juli",
-      "short": "Jul"
-    },
-    "june": {
-      "long": "Juni",
-      "short": "Jun"
-    },
-    "march": {
-      "long": "Maret",
-      "short": "Mar"
-    },
-    "may": {
-      "long": "Mei",
-      "short": "Mei"
-    },
-    "november": {
-      "long": "November",
-      "short": "Nov"
-    },
-    "october": {
-      "long": "Oktober",
-      "short": "Okt"
-    },
-    "september": {
-      "long": "September",
-      "short": "Sep"
-    }
+    "april": "{format, select, long {April} short {Apr} other {April}}",
+    "august": "{format, select, long {Agustus} short {Agu} other {Agustus}}",
+    "december": "{format, select, long {Desember} short {Des} other {Desember}}",
+    "february": "{format, select, long {Februari} short {Feb} other {Februari}}",
+    "january": "{format, select, long {Januari} short {Jan} other {Januari}}",
+    "july": "{format, select, long {Juli} short {Jul} other {Juli}}",
+    "june": "{format, select, long {Juni} short {Jun} other {Juni}}",
+    "march": "{format, select, long {Maret} short {Mar} other {Maret}}",
+    "may": "{format, select, long {Mei} short {Mei} other {Mei}}",
+    "november": "{format, select, long {November} short {Nov} other {November}}",
+    "october": "{format, select, long {Oktober} short {Okt} other {Oktober}}",
+    "september": "{format, select, long {September} short {Sep} other {September}}"
   },
   "Sidebar": {
+    "basugandhi": "Basugandhi",
     "getInTouch": "Hubungi aku, ya!",
     "hello": "Ooh, hai yang di sana! Aku",
+    "jobs": {
+      "softwareEngineer": "Software Engineer"
+    },
     "me": "Aku seorang software engineer yang fokus di backend API dan integrasi frontend. Akhir-akhir ini, aku juga sedang seru-serunya belajar UI/UX dan React.",
     "nickname": "Tapi panggil saja Babas atau Nao. Itu lebih asyik . . .",
-    "thanks1": "Hai! Senang sekali kamu mengunjungi situs pribadiku, ",
-    "thanks2": "terima kasih!"
+    "sasangka": "Sasangka Murti",
+    "thanks": "Hai! Senang sekali kamu mengunjungi situs pribadiku, <thank>terima kasih!</thank>"
   }
 }

@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import {
   Stack,
@@ -11,25 +11,25 @@ import {
   Box,
   Icon,
   useBreakpointValue,
-} from '@chakra-ui/react';
-import { useTranslations, useLocale } from 'next-intl';
-import { motion } from 'framer-motion';
-import styles from '@/components/Sidebar/styles.module.css';
-import { fadeInUp, letterSpace, simpleOpacity, stagger, scaleUp } from '@/config/animations';
-import { SocialMedias } from '@/config/sidebar';
+} from '@chakra-ui/react'
+import { useTranslations, useLocale } from 'next-intl'
+import { motion } from 'framer-motion'
+import styles from '@/components/Sidebar/styles.module.css'
+import { fadeInUp, letterSpace, simpleOpacity, stagger, scaleUp } from '@/config/animations'
+import { SocialMedias } from '@/config/sidebar'
 
 const Sidebar = () => {
-  const { colorMode } = useColorMode();
-  const display = useBreakpointValue({ base: 'none', lg: 'block' });
-  const surNameSize = useBreakpointValue({ base: '3xl', md: '3xl' });
-  const MotionHeading = motion(Heading);
-  const MotionText = motion(Text);
-  const MotionStack = motion(Stack);
-  const MotionButton = motion(Button);
-  const MotionBox = motion(Box);
+  const { colorMode } = useColorMode()
+  const display = useBreakpointValue({ base: 'none', lg: 'block' })
+  const surNameSize = useBreakpointValue({ base: '3xl', md: '3xl' })
+  const MotionHeading = motion(Heading)
+  const MotionText = motion(Text)
+  const MotionStack = motion(Stack)
+  const MotionButton = motion(Button)
+  const MotionBox = motion(Box)
 
-  const t = useTranslations('Sidebar');
-  const locale = useLocale();
+  const t = useTranslations('Sidebar')
+  const locale = useLocale()
 
   return (
     <MotionBox
@@ -68,7 +68,7 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Basugandhi
+            {t('basugandhi')}
           </MotionHeading>
           <MotionHeading
             as="h1"
@@ -77,7 +77,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Sasangka Murti
+            {t('sasangka')}
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -95,7 +95,7 @@ const Sidebar = () => {
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            Software Engineer
+            {t('jobs.softwareEngineer')}
           </MotionHeading>
 
           <MotionText
@@ -105,11 +105,13 @@ const Sidebar = () => {
             variants={fadeInUp}
             maxWidth={{ base: '100%', lg: '80%' }}
           >
-            {t('thanks1')}
-            <Text variant="emphasis" as="span">
-              {' '}
-              {t('thanks2')}
-            </Text>
+            {t.rich('thanks', {
+              thank: (chunks) => (
+                <Text variant="emphasis" as="span">
+                  {chunks}
+                </Text>
+              ),
+            })}
             <br /> {t('me')}
           </MotionText>
           <MotionButton
@@ -150,7 +152,7 @@ const Sidebar = () => {
         </MotionStack>
       </Container>
     </MotionBox>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

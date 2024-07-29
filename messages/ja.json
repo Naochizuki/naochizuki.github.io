@@ -4,6 +4,9 @@
       "description": "僕は<university>セベラス・マレット大学</university>の<major>情報学部</major>の最終学年の学生です。<role>ソフトウェアエンジニア</role>として、<meiwa>メイワインダストリー株式会社</meiwa>を含むいくつかの企業でインターンシップを経験しました。ですから、僕はすでに{years}年間のプロフェッショナルなコーディング経験があります。",
       "fullArsenal": "僕のすべてのスキルをご覧ください!",
       "technologyDescription": "これらは、僕がよく使う技術です。まるで毎日一緒に過ごす友達のようなものです。",
+      "tooltip": {
+        "meiwa": "ついに日本の生活を体験できる！僕にとって、特に平凡な経済状況にある学生として、これは夢が叶ったことです。"
+      },
       "whatIDo": "僕のやっていることは何ですか?"
     },
     "skillSet": {
@@ -56,14 +59,15 @@
     }
   },
   "GetInTouch": {
-    "sayHi": "Sapa aku!"
+    "goodBye": "僕は少し内向的ですが、社交のエネルギーがある限りメッセージには返信します。コーディング、仕事、映画、アニメ関連の話題、何でもOKです。だから、遠慮せずにSNSや<email>メール</email>で連絡してね。",
+    "sayHi": "声をかけてね!"
   },
   "Menu": {
     "navigation": {
-      "about": "Tentang",
-      "contact": "Kontak",
-      "experience": "Pengalaman",
-      "works": "Pekerjaan"
+      "about": "について",
+      "contact": "接触",
+      "experience": "経験",
+      "works": "作品"
     }
   },
   "mode": {
@@ -71,61 +75,29 @@
     "light": "Cerah"
   },
   "Month": {
-    "april": {
-      "long": "April",
-      "short": "Apr"
-    },
-    "august": {
-      "long": "Agustus",
-      "short": "Agu"
-    },
-    "december": {
-      "long": "Desember",
-      "short": "Des"
-    },
-    "february": {
-      "long": "Februari",
-      "short": "Feb"
-    },
-    "january": {
-      "long": "Januari",
-      "short": "Jan"
-    },
-    "july": {
-      "long": "Juli",
-      "short": "Jul"
-    },
-    "june": {
-      "long": "Juni",
-      "short": "Jun"
-    },
-    "march": {
-      "long": "Maret",
-      "short": "Mar"
-    },
-    "may": {
-      "long": "Mei",
-      "short": "Mei"
-    },
-    "november": {
-      "long": "November",
-      "short": "Nov"
-    },
-    "october": {
-      "long": "Oktober",
-      "short": "Okt"
-    },
-    "september": {
-      "long": "September",
-      "short": "Sep"
-    }
+    "april": "{format, select, long {4月} short {4月} other {4月}}",
+    "august": "{format, select, long {8月} short {8月} other {8月}}",
+    "december": "{format, select, long {12月} short {12月} other {12月}}",
+    "february": "{format, select, long {2月} short {2月} other {2月}}",
+    "january": "{format, select, long {1月} short {1月} other {1月}}",
+    "july": "{format, select, long {7月} short {7月} other {7月}}",
+    "june": "{format, select, long {6月} short {6月} other {6月}}",
+    "march": "{format, select, long {3月} short {3月} other {3月}}",
+    "may": "{format, select, long {5月} short {5月} other {5月}}",
+    "november": "{format, select, long {11月} short {11月} other {11月}}",
+    "october": "{format, select, long {10月} short {10月} other {10月}}",
+    "september": "{format, select, long {9月} short {9月} other {9月}}"
   },
   "Sidebar": {
-    "getInTouch": "Hubungi aku, ya!",
-    "hello": "Ooh, hai yang di sana! Aku",
-    "me": "Aku seorang software engineer yang fokus di backend API dan integrasi frontend. Akhir-akhir ini, aku juga sedang seru-serunya belajar UI/UX dan React.",
-    "nickname": "Tapi panggil saja Babas atau Nao. Itu lebih asyik . . .",
-    "thanks1": "Hai! Senang sekali kamu mengunjungi situs pribadiku, ",
-    "thanks2": "terima kasih!"
+    "basugandhi": "バスガンディ",
+    "getInTouch": "連絡してね！",
+    "hello": "おお、そこの君！僕は",
+    "jobs": {
+      "softwareEngineer": "ソフトウェアエンジニア"
+    },
+    "me": "僕はバックエンドAPIとフロントエンドの統合に集中しているソフトウェアエンジニアです。最近はUI/UXとReactの学習にも夢中です。",
+    "nickname": "でも、ババスかナオと呼んでね。そのほうが楽しいよ . . .",
+    "sasangka": "ササンカ　ムルティ",
+    "thanks": "こんにちは！僕の個人サイトに訪れてくれてとても嬉しいです、<thank>ありがとう！</thank>"
   }
 }
