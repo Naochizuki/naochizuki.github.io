@@ -32,12 +32,10 @@ export default async function RootLayout({
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`}
-        />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=G-V0K7ZYN96D`} />
         <Script id="google-analytics">
           {`
-            window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);gtag('js', new Date());gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');
+            window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);gtag('js', new Date());gtag('config', 'G-V0K7ZYN96D');
           `}
         </Script>
       </head>
