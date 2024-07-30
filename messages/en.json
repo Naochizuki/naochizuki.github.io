@@ -2,24 +2,24 @@
   "About": {
     "detail": {
       "description": "I am a final-year undergraduate student in <major>Computer Science</major> at <university>Sebelas Maret University</university>. I have completed several internships as a <role>Software Engineer</role>, including at <meiwa>Meiwa Industry Co., Ltd</meiwa>. So, you could say I have professional coding experience for {years} years.",
-      "fullArsenal": "Intip semua keterampilan yang aku punya!",
-      "technologyDescription": "Ini beberapa teknologi yang sering aku pakai, ibaratnya sudah jadi temen <coffee>ngopi</coffee> sehari-hari <icon></icon>.",
+      "fullArsenal": "Check out all the skills I have!",
+      "technologyDescription": "Here are some of the technologies I frequently use, they’ve become like my daily companions.",
       "tooltip": {
-        "meiwa": "Akhirnya aku bisa merasakan hidup di Jepang! Buatku, ini mimpi yang jadi nyata, apalagi sebagai mahasiswa dengan kondisi ekonomi pas-pasan"
+        "meiwa": "Finally, I got to experience living in Japan! For me, this is a dream come true, especially as a student with a modest budget"
       },
-      "whatIDo": "Apa yang aku lakukan?"
+      "whatIDo": "What i do?"
     },
     "skillSet": {
       "modal": {
-        "header": "Daftar Semua Ketrampilanku"
+        "header": "List of All My Skills"
       },
       "skillList": {
         "backend": "Backend",
         "database": "Database",
         "frontend": "Frontend",
-        "note": "Beberapa mikro-framework mungkin tidak termasuk",
-        "productivityBoosts": "Produktivitas",
-        "uiFramework": "Framework UI"
+        "note": "Some micro-frameworks may not be included",
+        "productivityBoosts": "Productivity Boosts",
+        "uiFramework": "UI Framework"
       }
     }
   },
@@ -35,108 +35,104 @@
         "juniorSoftwareEngineer": "Junior Software Engineer",
         "softwareEngineer": "Software Engineer"
       },
-      "present": "Sekarang",
+      "present": "Present",
       "roles": {
         "sc": {
-          "role1": "Mengikuti pelatihan intensif dalam bidang backend development menggunakan bahasa pemrograman Python dan framework Django. Pelatihan ini mencakup teknik-teknik pengembangan backend yang efisien dan best practices dalam penggunaan Django.",
-          "role2": "Membangun sistem backend berbasis API yang dapat diintegrasikan dengan UI yang disiapkan oleh Startup Campus. Setelah menyelesaikan pelatihan ini, saya menerima sertifikat sebagai bukti partisipasi dan pencapaian."
+          "role1": "Participated in intensive training in backend development using Python and the Django framework. This training covered efficient backend development techniques and best practices for using Django.",
+          "role2": "Developed an API-based backend system that can be integrated with the UI provided by Startup Campus. After completing this training, I received a certificate as proof of participation and achievement."
         },
         "meiwa": {
-          "role1": "Membangun website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Website ini dirancang untuk menyatukan berbagai aplikasi perusahaan yang sebelumnya memiliki tampilan dan tautan yang berbeda-beda, sehingga menciptakan pengalaman yang lebih konsisten dan efisien bagi pengguna.",
-          "role2": "Membuat komponen inti UI seperti form input, tombol, tab, dan lainnya dengan menggunakan <primevue>PrimeVue</primevue> (Framework UI). Komponen-komponen ini memastikan konsistensi tampilan di seluruh website, sehingga desain dan fungsionalitasnya selalu seragam.",
-          "role3": "Mengembangkan fitur untuk memantau status barang produksi yang sedang dalam proses pengecatan.",
-          "role4": "Mengembangkan fitur FMEA (Failure Mode and Effects Analysis) untuk mengidentifikasi dan mencegah potensi kegagalan atau cacat dalam proses produksi. Fitur ini membantu memastikan kualitas produk tetap tinggi dan meminimalkan risiko kesalahan."
+          "role1": "Developed an internal website to monitor factory operations and facilitate employee access to information. The website was designed to unify various company applications that previously had different layouts and links, creating a more consistent and efficient user experience.",
+          "role2": "Created core UI components such as input forms, buttons, tabs, and more using <primevue>PrimeVue</primevue> (UI Framework). These components ensure consistent design across the entire website, maintaining uniformity in both appearance and functionality.",
+          "role3": "Developed a feature to monitor the status of production items that are in the painting process.",
+          "role4": "Developed an FMEA (Failure Mode and Effects Analysis) feature to identify and prevent potential failures or defects in the production process. This feature helps ensure high product quality and minimize the risk of errors."
         },
         "risnov": {
-          "role1": "Membuat ulang website menggunakan framework Laravel dan memenuhi requirement terbaru, termasuk update versi PHP yang digunakan.",
-          "role2": "Membangun Homepage yang menampilkan preview artikel terbaru, serta halaman khusus untuk membaca artikel secara lengkap.",
-          "role3": "Menampilkan data <rida>RIDA</rida> (Riset dan Inovasi dalam Data) dengan visualisasi dalam bentuk chart."
+          "role1": "Rebuilt the website using the Laravel framework to meet the latest requirements, including updating the PHP version used.",
+          "role2": "Built a homepage that showcases previews of the latest articles, along with a dedicated page for reading the full articles.",
+          "role3": "Displayed <rida>RIDA</rida> (Research and Innovation in Data) data with visualizations in the form of charts."
         }
       },
       "subDetail": {
-        "internship": "Intership",
+        "internship": "Internship",
         "msib": "MSIB Kampus Merdeka",
-        "uns": "Universitas Sebelas Maret"
+        "uns": "Sebelas Maret University"
       }
     },
     "main": {
-      "description": "Sejak tahun 2022, aku memulai magang pertama untuk mengasah keterampilan dan menambah pengalaman. Meskipun masih terbilang singkat, aku sangat berterima kasih kepada perusahaan-perusahaan yang telah memberikan kesempatan untuk berkembang. Pengalaman ini sangat berharga dan memberikan fondasi kuat dalam perjalanan karierku.",
-      "header": "Pengalaman Kerjaku."
+      "description": "Since 2022, I started my first internship to hone my skills and gain experience. Although it's been relatively short, I am very grateful to the companies that have provided opportunities for growth. This experience has been invaluable and provides a strong foundation for my career journey.",
+      "header": "My Work Experience."
     }
   },
   "FeaturedWorks": {
     "featuredCard": {
-      "viewProject": "Lihat Proyek",
-      "viewTechnology": "Lihat Teknologi"
+      "viewProject": "View Projects",
+      "viewTechnology": "View Technologies"
     },
     "main": {
-      "description": "Lihat beberapa proyek yang telah aku kerjakan saat freelancing, proyek perusahaan, dan juga studi kasus.",
+      "description": "Check out some of the projects I’ve worked on during freelancing, company projects, and case studies.",
       "descriptions": {
-        "meiwaPortal": "Website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Dikembangkan menggunakan Vue.js dan Laravel, serta beberapa library tambahan lainnya."
+        "meiwaPortal": "An internal website to monitor factory operations and facilitate employee access to information. Developed using Vue.js and Laravel, along with several additional libraries."
       },
-      "header": "Beberapa Proyekku.",
+      "header": "Some of My Projects.",
       "title": {
         "meiwaPortal": "Meiwa Portal"
       }
     },
     "technologySet": {
       "modal": {
-        "header": "Teknologi"
+        "header": "Technologies"
       },
       "technologyList": {
         "backend": "Backend",
         "cicd": "CICD",
         "database": "Database",
-        "desktop": "Pengembangan Aplikasi Desktop",
+        "desktop": "Desktop Application Development",
         "frontend": "Frontend",
-        "game": "Pengembangan Game",
-        "mobile": "Pengembangan Aplikasi Mobile",
-        "note": "Beberapa mikro-framework mungkin tidak termasuk",
-        "productivityBoosts": "Produktivitas",
-        "uiFramework": "Framework UI"
+        "game": "Game Development",
+        "mobile": "Mobile Application Development",
+        "note": "Some micro-frameworks may not be included",
+        "productivityBoosts": "Productivity Boosts",
+        "uiFramework": "UI Framework"
       }
     }
   },
   "GetInTouch": {
-    "goodBye": "Meskipun aku agak introvert, aku tetap akan membalas pesan selama energi interaksi sosialku masih ada. Coding, pekerjaan, film, atau bahkan hal-hal terkait anime, semuanya oke. Jadi, jangan ragu untuk menghubungiku di media sosial atau kirim <email>email</email>.",
-    "sayHi": "Sapa aku!"
+    "goodBye": "Even though I’m a bit introverted, I'll respond to messages as long as my social energy lasts. Coding, work, movies, or even anime-related topics are all good. So, feel free to reach out to me on social media or send me an <email>email</email>.",
+    "sayHi": "Say hi!"
   },
   "Menu": {
     "navigation": {
-      "about": "Tentang",
-      "contact": "Kontak",
-      "experience": "Pengalaman",
-      "works": "Pekerjaan"
+      "about": "About",
+      "contact": "Contact",
+      "experience": "Experience",
+      "works": "Works"
     }
-  },
-  "mode": {
-    "dark": "Malam",
-    "light": "Cerah"
   },
   "Month": {
     "april": "{format, select, long {April} short {Apr} other {April}}",
-    "august": "{format, select, long {Agustus} short {Agu} other {Agustus}}",
-    "december": "{format, select, long {Desember} short {Des} other {Desember}}",
-    "february": "{format, select, long {Februari} short {Feb} other {Februari}}",
-    "january": "{format, select, long {Januari} short {Jan} other {Januari}}",
-    "july": "{format, select, long {Juli} short {Jul} other {Juli}}",
-    "june": "{format, select, long {Juni} short {Jun} other {Juni}}",
-    "march": "{format, select, long {Maret} short {Mar} other {Maret}}",
-    "may": "{format, select, long {Mei} short {Mei} other {Mei}}",
+    "august": "{format, select, long {August} short {Aug} other {August}}",
+    "december": "{format, select, long {December} short {Dec} other {December}}",
+    "february": "{format, select, long {February} short {Feb} other {February}}",
+    "january": "{format, select, long {January} short {Jan} other {January}}",
+    "july": "{format, select, long {July} short {Jul} other {July}}",
+    "june": "{format, select, long {June} short {Jun} other {June}}",
+    "march": "{format, select, long {March} short {Mar} other {March}}",
+    "may": "{format, select, long {May} short {May} other {May}}",
     "november": "{format, select, long {November} short {Nov} other {November}}",
-    "october": "{format, select, long {Oktober} short {Okt} other {Oktober}}",
+    "october": "{format, select, long {October} short {Oct} other {October}}",
     "september": "{format, select, long {September} short {Sep} other {September}}"
   },
   "Sidebar": {
     "basugandhi": "Basugandhi",
-    "getInTouch": "Hubungi aku, ya!",
-    "hello": "Ooh, hai yang di sana! Aku",
+    "getInTouch": "Contact me!",
+    "hello": "Oh, hi there! I’m",
     "jobs": {
       "softwareEngineer": "Software Engineer"
     },
-    "me": "Aku seorang software engineer yang fokus di backend API dan integrasi frontend. Akhir-akhir ini, aku juga sedang seru-serunya belajar UI/UX dan React.",
-    "nickname": "Tapi panggil saja Babas atau Nao. Itu lebih asyik . . .",
+    "me": "I’m a software engineer specializing in backend APIs and frontend integration. Recently, I’ve also been diving into UI/UX and React with great enthusiasm.",
+    "nickname": "But you can call me Babas or Nao. It’s more fun that way . . .",
     "sasangka": "Sasangka Murti",
-    "thanks": "Hai! Senang sekali kamu mengunjungi situs pribadiku, <thank>terima kasih!</thank>"
+    "thanks": "Hi! I’m really glad you visited my personal site, <thank>thank you!</thank>"
   }
 }
