@@ -3,6 +3,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { Quicksand } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import Script from 'next/script'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { getMessages } from 'next-intl/server'
 import theme from '@/config/theme'
 import '@/app/globals.css'
@@ -26,18 +27,18 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <title>Basugandhi Sasangka Murti - Portfolio</title>
-        <link rel="shortcut icon" href="../favicon.svg" />
+        <link rel="shortcut icon" href="../favicon.ico" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=G-V0K7ZYN96D`} />
+        <GoogleAnalytics gaId="G-V0K7ZYN96D" />
+        {/* <Script src={`https://www.googletagmanager.com/gtag/js?id=G-V0K7ZYN96D`} />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);gtag('js', new Date());gtag('config', 'G-V0K7ZYN96D');
           `}
-        </Script>
+        </Script> */}
       </head>
       <body className={quicksand.className}>
         <NextIntlClientProvider messages={messages}>

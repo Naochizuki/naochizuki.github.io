@@ -36,7 +36,7 @@ const FeaturedWorksSection = () => {
         variants={galleryStagger}
       >
         {ProjectsList.map((project) => (
-          <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+          <MotionGridItem key={`project-${project.idx}`} colSpan={6} variants={fadeInUpSlower}>
             <FeaturedCard
               idx={project.idx}
               title={t(project.title)}

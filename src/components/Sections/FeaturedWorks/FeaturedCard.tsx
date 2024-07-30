@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import {
   Box,
@@ -13,24 +13,24 @@ import {
   Stack,
   useColorModeValue,
   useDisclosure,
-} from '@chakra-ui/react';
-import dynamic from 'next/dynamic';
-import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
-import styles from '@/components/Sections/FeaturedWorks/styles.module.css';
-import { easing, DURATIONS } from '@/config/animations';
+} from '@chakra-ui/react'
+import dynamic from 'next/dynamic'
+import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
+import styles from '@/components/Sections/FeaturedWorks/styles.module.css'
+import { easing, DURATIONS } from '@/config/animations'
 
 export type FeaturedCardProps = {
-  height: string | ResponsiveValue<any>;
-  src: string;
-  idx: number;
-  title: string;
-  description: string;
-  objectPosition?: string;
-  ctaUrl?: string;
-  isMobile?: boolean;
-  technologies?: string[];
-};
+  height: string | ResponsiveValue<any>
+  src: string
+  idx: number
+  title: string
+  description: string
+  objectPosition?: string
+  ctaUrl?: string
+  isMobile?: boolean
+  technologies?: string[]
+}
 
 const variants = {
   normal: {
@@ -52,11 +52,11 @@ const variants = {
       ease: easing,
     },
   },
-};
+}
 
-const MotionImage = motion(Image);
+const MotionImage = motion(Image)
 
-const TechnologySetModal = dynamic(() => import('./TechnologySetModal'));
+const TechnologySetModal = dynamic(() => import('./TechnologySetModal'))
 
 const ProjectDescription = ({
   idx,
@@ -66,15 +66,15 @@ const ProjectDescription = ({
   isLeft,
   technologies,
 }: {
-  idx?: number;
-  title: string;
-  description: string;
-  ctaUrl?: string;
-  isLeft: boolean;
-  technologies?: string[];
+  idx?: number
+  title: string
+  description: string
+  ctaUrl?: string
+  isLeft: boolean
+  technologies?: string[]
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const t = useTranslations('FeaturedWorks.featuredCard');
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const t = useTranslations('FeaturedWorks.featuredCard')
 
   return (
     <>
@@ -151,8 +151,8 @@ const ProjectDescription = ({
       </Container>
       <TechnologySetModal isOpen={isOpen} onClose={onClose} technologies={technologies} />
     </>
-  );
-};
+  )
+}
 
 const FeaturedCard = ({
   idx,
@@ -165,8 +165,8 @@ const FeaturedCard = ({
   isMobile,
   technologies,
 }: FeaturedCardProps) => {
-  const isLeftImage = isMobile ? false : idx % 2 === 0;
-  const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.200');
+  const isLeftImage = isMobile ? false : idx % 2 === 0
+  const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.200')
   const CoverImage = () => (
     <MotionImage
       height={height}
@@ -181,7 +181,7 @@ const FeaturedCard = ({
       whileTap={variants.tap}
       fallback={<Skeleton height={height} width="100%" />}
     />
-  );
+  )
 
   return (
     <Box
@@ -210,6 +210,6 @@ const FeaturedCard = ({
         {!isLeftImage && <CoverImage />}
       </SimpleGrid>
     </Box>
-  );
-};
-export default FeaturedCard;
+  )
+}
+export default FeaturedCard
