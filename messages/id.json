@@ -25,12 +25,39 @@
   },
   "Experience": {
     "experienceTab": {
+      "name": {
+        "lppm": "LPPM",
+        "meiwaIndustry": "Meiwa Industry Co., Ltd.",
+        "startupCampus": "Startup Campus"
+      },
       "position": {
         "backendTrackParticipants": "Backend Track Participants",
         "juniorSoftwareEngineer": "Junior Software Engineer",
         "softwareEngineer": "Software Engineer"
       },
-      "present": "Sekarang"
+      "present": "Sekarang",
+      "roles": {
+        "sc": {
+          "role1": "Mengikuti pelatihan intensif dalam bidang backend development menggunakan bahasa pemrograman Python dan framework Django. Pelatihan ini mencakup teknik-teknik pengembangan backend yang efisien dan best practices dalam penggunaan Django.",
+          "role2": "Membangun sistem backend berbasis API yang dapat diintegrasikan dengan UI yang disiapkan oleh Startup Campus. Setelah menyelesaikan pelatihan ini, saya menerima sertifikat sebagai bukti partisipasi dan pencapaian."
+        },
+        "meiwa": {
+          "role1": "Membangun website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Website ini dirancang untuk menyatukan berbagai aplikasi perusahaan yang sebelumnya memiliki tampilan dan tautan yang berbeda-beda, sehingga menciptakan pengalaman yang lebih konsisten dan efisien bagi pengguna.",
+          "role2": "Membuat komponen inti UI seperti form input, tombol, tab, dan lainnya dengan menggunakan <primevue>PrimeVue</primevue> (Framework UI). Komponen-komponen ini memastikan konsistensi tampilan di seluruh website, sehingga desain dan fungsionalitasnya selalu seragam.",
+          "role3": "Mengembangkan fitur untuk memantau status barang produksi yang sedang dalam proses pengecatan.",
+          "role4": "Mengembangkan fitur FMEA (Failure Mode and Effects Analysis) untuk mengidentifikasi dan mencegah potensi kegagalan atau cacat dalam proses produksi. Fitur ini membantu memastikan kualitas produk tetap tinggi dan meminimalkan risiko kesalahan."
+        },
+        "risnov": {
+          "role1": "Membuat ulang website menggunakan framework Laravel dan memenuhi requirement terbaru, termasuk update versi PHP yang digunakan.",
+          "role2": "Membangun Homepage yang menampilkan preview artikel terbaru, serta halaman khusus untuk membaca artikel secara lengkap.",
+          "role3": "Menampilkan data <rida>RIDA</rida> (Riset dan Inovasi dalam Data) dengan visualisasi dalam bentuk chart."
+        }
+      },
+      "subDetail": {
+        "internship": "Intership",
+        "msib": "MSIB Kampus Merdeka",
+        "uns": "Universitas Sebelas Maret"
+      }
     },
     "main": {
       "description": "Sejak tahun 2022, aku memulai magang pertama untuk mengasah keterampilan dan menambah pengalaman. Meskipun masih terbilang singkat, aku sangat berterima kasih kepada perusahaan-perusahaan yang telah memberikan kesempatan untuk berkembang. Pengalaman ini sangat berharga dan memberikan fondasi kuat dalam perjalanan karierku.",

@@ -1,20 +1,21 @@
-'use client';
+'use client'
 
-import { memo } from 'react';
-import { Heading, Text, Stack, Grid, GridItem, useBreakpointValue } from '@chakra-ui/react';
-import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
-import FeaturedCard from '@/components/Sections/FeaturedWorks/FeaturedCard';
-import { fadeInUpSlower, galleryStagger } from '@/config/animations';
-import { mobileBreakpointsMap } from '@/config/theme';
+import { memo } from 'react'
+import { Heading, Text, Stack, Grid, GridItem, useBreakpointValue } from '@chakra-ui/react'
+import { useTranslations } from 'next-intl'
+import { motion } from 'framer-motion'
+import FeaturedCard from '@/components/Sections/FeaturedWorks/FeaturedCard'
+import { fadeInUpSlower, galleryStagger } from '@/config/animations'
+import { mobileBreakpointsMap } from '@/config/theme'
+import { ProjectsList } from '@/config/project'
 
-const MotionGrid = motion(Grid);
-const MotionGridItem = motion(GridItem);
+const MotionGrid = motion(Grid)
+const MotionGridItem = motion(GridItem)
 
 const FeaturedWorksSection = () => {
-  const isMobile = useBreakpointValue(mobileBreakpointsMap);
+  const isMobile = useBreakpointValue(mobileBreakpointsMap)
 
-  const t = useTranslations('FeaturedWorks.main');
+  const t = useTranslations('FeaturedWorks.main')
 
   return (
     <Stack width={{ base: '99%', lg: '60%', xl: '75%' }} height="100%" spacing={{ base: 6, xl: 8 }}>
@@ -34,18 +35,20 @@ const FeaturedWorksSection = () => {
         gap={{ base: 5, md: 6 }}
         variants={galleryStagger}
       >
-        <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
-          <FeaturedCard
-            idx={1}
-            title="Meiwa Portals"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Dikembangkan menggunakan Vue.js dan Laravel, serta beberapa library tambahan lainnya."
-            height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            objectPosition="right 20%"
-            isMobile={isMobile}
-            technologies={['VueJS', 'Laravel']}
-          />
-        </MotionGridItem>
+        {ProjectsList.map((project) => (
+          <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+            <FeaturedCard
+              idx={project.idx}
+              title={project.title}
+              src={project.src}
+              description={project.description}
+              height={project.height}
+              objectPosition={project.objectPosition}
+              isMobile={useBreakpointValue(project.isMobile)}
+              technologies={project.technologies}
+            />
+          </MotionGridItem>
+        ))}
 
         {/* <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
@@ -85,7 +88,7 @@ const FeaturedWorksSection = () => {
         </MotionGridItem> */}
       </MotionGrid>
     </Stack>
-  );
-};
+  )
+}
 
-export default memo(FeaturedWorksSection);
+export default memo(FeaturedWorksSection)

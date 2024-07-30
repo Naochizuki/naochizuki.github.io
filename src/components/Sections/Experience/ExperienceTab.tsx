@@ -105,11 +105,11 @@ const ExperienceTab = () => {
                     fontSize="lg"
                     fontWeight="bold"
                   >
-                    #{company.name}
+                    #{t(company.name)}
                   </Link>
                   <Text as="span" textTransform="none" fontSize="x-small" variant="description">
                     {' '}
-                    {company.subDetail}
+                    {t(company.subDetail)}
                   </Text>
                 </Text>
                 <Text fontSize="smaller">{`${tMonth(`${company.start.toLowerCase()}`, {
@@ -123,26 +123,36 @@ const ExperienceTab = () => {
                 }`}</Text>
               </Stack>
               <List spacing={3} pt={5}>
-                {Object.entries(company.roles || {}).map((roles: any) => {
-                  if (locale === roles[0]) {
-                    return roles[1].map((roleDesc: any, idx: any) => (
-                      <ListItem
-                        key={`${company.name}-desc-${idx}`}
-                        fontSize="smaller"
-                        display="flex"
-                        alignItems="center"
-                        justifyContent="flex-start"
-                      >
-                        <ListIcon as={BiRightArrow} color={emphasis} display="block" />
-                        <Text as="span" display="block" variant="description">
-                          {roleDesc}
-                        </Text>
-                      </ListItem>
-                    ))
-                  }
-
-                  return <span key={roles[1][0]}></span>
-                })}
+                {company.roles.map((roleDesc: any, idx: any) => (
+                  <ListItem
+                    key={`${company.name}-desc-${idx}`}
+                    fontSize="smaller"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="flex-start"
+                  >
+                    <ListIcon as={BiRightArrow} color={emphasis} display="block" />
+                    <Text as="span" display="block" variant="description">
+                      {t.rich(roleDesc, {
+                        primevue: (chunks) => (
+                          <Link href="https://primevue.org/" target="_blank" rel="noreferrer">
+                            {chunks}
+                          </Link>
+                        ),
+                        rida: (chunks) => (
+                          <Link
+                            aria-label="RIDA"
+                            href="https://risnov.uns.ac.id/id/rida"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {chunks}
+                          </Link>
+                        ),
+                      })}
+                    </Text>
+                  </ListItem>
+                ))}
               </List>
             </SlideFade>
           </TabPanel>

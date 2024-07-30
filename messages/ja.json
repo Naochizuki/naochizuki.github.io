@@ -25,12 +25,39 @@
   },
   "Experience": {
     "experienceTab": {
+      "name": {
+        "lppm": "LPPM",
+        "meiwaIndustry": "メイワインダストリー株式会社",
+        "startupCampus": "Startup Campus"
+      },
       "position": {
         "backendTrackParticipants": "バックエンドトラックの参加者",
         "juniorSoftwareEngineer": "ジュニアソフトウェアエンジニア",
         "softwareEngineer": "ソフトウェアエンジニア"
       },
-      "present": "今まで"
+      "present": "今まで",
+      "roles": {
+        "sc": {
+          "role1": "Pythonプログラミング言語とDjangoフレームワークを使用したバックエンド開発の集中トレーニングに参加しました。このトレーニングでは、効率的なバックエンド開発技術とDjangoのベストプラクティスが含まれています。",
+          "role2": "Startup Campusが用意したUIと統合可能なAPIベースのバックエンドシステムを構築しました。このトレーニングを修了後、参加と成果を証明するための証明書を受け取りました。"
+        },
+        "meiwa": {
+          "role1": "社内向けのウェブサイトを構築し、工場の作業を監視し、従業員が情報にアクセスしやすくしました。このウェブサイトは、以前は異なるデザインやリンクを持つ企業のさまざまなアプリケーションを統合するように設計されており、ユーザーにより一貫した効率的な体験を提供します。",
+          "role2": "<primevue>PrimeVue</primevue> (UIフレームワーク)を使用して、フォーム入力、ボタン、タブなどの基本的なUIコンポーネントを作成しました。これらのコンポーネントは、ウェブサイト全体の一貫したデザインと機能性を確保します。",
+          "role3": "塗装工程中の製品のステータスを監視する機能を開発しました。",
+          "role4": "FMEA（故障モード影響解析）の機能を開発し、製造プロセスでの潜在的な故障や欠陥を特定し、防止します。この機能により、製品の品質を高く保ち、エラーのリスクを最小限に抑えることができます。"
+        },
+        "risnov": {
+          "role1": "Laravelフレームワークを使用してウェブサイトを再構築し、最新の要件に対応しました。これには、使用するPHPバージョンの更新も含まれています。",
+          "role2": "最新の記事プレビューを表示するホームページを作成し、記事を完全に読むための専用ページも用意しました。",
+          "role3": "<rida>RIDA</rida>（データにおける研究とイノベーション）のデータをチャート形式で視覚化して表示しました。"
+        }
+      },
+      "subDetail": {
+        "internship": "インターンシップ",
+        "msib": "MSIB Kampus Merdeka",
+        "uns": "セベラス・マレット大学"
+      }
     },
     "main": {
       "description": "2022年から、スキルを磨き、経験を積むために初めてのインターンシップを始めました。期間はまだ短いですが、成長の機会を与えてくれた企業には非常に感謝しています。この経験はとても貴重で、キャリアの基盤を築くのに役立っています。",
@@ -39,25 +66,25 @@
   },
   "FeaturedWorks": {
     "featuredCard": {
-      "viewProject": "Lihat Proyek",
-      "viewTechnology": "Lihat Teknologi"
+      "viewProject": "プロジェクトを見る",
+      "viewTechnology": "テクノロジーを参照"
     },
     "main": {
-      "description": "Lihat beberapa proyek yang telah aku kerjakan saat freelancing, proyek perusahaan, dan juga studi kasus.",
-      "header": "Beberapa Proyekku."
+      "description": "フリーランスや企業プロジェクト、ケーススタディで取り組んだいくつかのプロジェクトを見てください。",
+      "header": "僕のいくつかのプロジェクト"
     },
     "technologySet": {
       "modal": {
-        "header": "Teknologi"
+        "header": "テクノロジー"
       },
       "technologyList": {
         "backend": "バックエンド",
         "cicd": "CICD",
         "database": "データベース",
-        "desktop": "Pengembangan Aplikasi Desktop",
+        "desktop": "デスクトップアプリケーションの開発",
         "frontend": "フロントエンド",
-        "game": "Pengembangan Game",
-        "mobile": "Pengembangan Aplikasi Mobile",
+        "game": "ゲーム開発",
+        "mobile": "モバイルアプリケーションの開発",
         "note": "いくつかのマイクロフレームワークは含まれていないかもしれません",
         "productivityBoosts": "生産性",
         "uiFramework": "UIフレームワーク"
