@@ -15,7 +15,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { motion } from 'framer-motion'
 import styles from '@/components/Sections/FeaturedWorks/styles.module.css'
 import { easing, DURATIONS } from '@/config/animations'
@@ -75,6 +75,7 @@ const ProjectDescription = ({
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const t = useTranslations('FeaturedWorks.featuredCard')
+  const locale = useLocale()
 
   return (
     <>
@@ -119,7 +120,7 @@ const ProjectDescription = ({
         >
           {description}
         </Text>
-        <Stack direction="row">
+        <Stack direction={{ base: 'row', lg: locale === 'ja' ? 'column' : 'row' }}>
           {ctaUrl && (
             <Button
               variant="outlineAlternative"

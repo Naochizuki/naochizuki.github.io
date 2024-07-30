@@ -72,11 +72,13 @@
     "main": {
       "description": "Check out some of the projects I’ve worked on during freelancing, company projects, and case studies.",
       "descriptions": {
-        "meiwaPortal": "An internal website to monitor factory operations and facilitate employee access to information. Developed using Vue.js and Laravel, along with several additional libraries."
+        "meiwaPortal": "An internal website to monitor factory operations and facilitate employee access to information. Developed using Vue.js and Laravel, along with several additional libraries.",
+        "risnov": "The website of the Research and Community Service Institute at Universitas Sebelas Maret uses Laravel for the backend and Bootstrap and TailwindCSS as the framework."
       },
       "header": "Some of My Projects.",
       "title": {
-        "meiwaPortal": "Meiwa Portal"
+        "meiwaPortal": "Meiwa Portal",
+        "risnov": "Risnov"
       }
     },
     "technologySet": {

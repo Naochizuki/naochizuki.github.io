@@ -72,11 +72,13 @@
     "main": {
       "description": "フリーランスや企業プロジェクト、ケーススタディで取り組んだいくつかのプロジェクトを見てください。",
       "descriptions": {
-        "meiwaPortal": "工場の作業を監視し、従業員が情報にアクセスしやすくするための社内ウェブサイト。Vue.jsとLaravelを使用して開発し、その他の追加ライブラリも活用しています。"
+        "meiwaPortal": "工場の作業を監視し、従業員が情報にアクセスしやすくするための社内ウェブサイト。Vue.jsとLaravelを使用して開発し、その他の追加ライブラリも活用しています。",
+        "risnov": "セブラス・マレット大学の研究・地域貢献機構のウェブサイトは、バックエンドにLaravelを使用し、フレームワークとしてBootstrapとTailwindCSSを使用しています。"
       },
       "header": "僕のいくつかのプロジェクト",
       "title": {
-        "meiwaPortal": "明和ポータル"
+        "meiwaPortal": "明和ポータル",
+        "risnov": "Risnov"
       }
     },
     "technologySet": {

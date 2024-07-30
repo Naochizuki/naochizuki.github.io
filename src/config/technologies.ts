@@ -33,6 +33,8 @@ import {
   SiMicrosoftsqlserver,
   SiAxios,
   SiApache,
+  SiVite,
+  SiBootstrap,
 } from 'react-icons/si'
 import { FaFontAwesomeAlt, FaSourcetree } from 'react-icons/fa'
 import { IoLogoPwa } from 'react-icons/io5'
@@ -160,6 +162,10 @@ export const Technologies: {
       name: 'Framer Motion',
       icon: SiFramer,
     },
+    {
+      name: 'Bootstrap',
+      icon: SiBootstrap,
+    },
   ],
   'productivity boost': [
     {
@@ -177,6 +183,10 @@ export const Technologies: {
     {
       name: 'SourceTree',
       icon: FaSourcetree,
+    },
+    {
+      name: 'Vite',
+      icon: SiVite,
     },
   ],
   mobile: [
@@ -214,15 +224,15 @@ export const Technologies: {
   'http client': [
     {
       name: 'Axios',
-      icon: SiAxios
-    }
+      icon: SiAxios,
+    },
   ],
   'web server': [
     {
       name: 'Apache',
-      icon: SiApache
-    }
-  ]
+      icon: SiApache,
+    },
+  ],
 }
 
 export const splitTechnologies = (srcArray: Technology[], technologies?: string[]) => {

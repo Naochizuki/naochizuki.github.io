@@ -72,11 +72,13 @@
     "main": {
       "description": "Lihat beberapa proyek yang telah aku kerjakan saat freelancing, proyek perusahaan, dan juga studi kasus.",
       "descriptions": {
-        "meiwaPortal": "Website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Dikembangkan menggunakan Vue.js dan Laravel, serta beberapa library tambahan lainnya."
+        "meiwaPortal": "Website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Dikembangkan menggunakan Vue.js dan Laravel, serta beberapa library tambahan lainnya.",
+        "risnov": "Website Lembaga Penelitian dan Pengabdian Masyarakat Universitas Sebelas Maret menggunakan Laravel untuk backend dan Bootstrap dan TailwindCSS sebagai framework."
       },
       "header": "Beberapa Proyekku.",
       "title": {
-        "meiwaPortal": "Meiwa Portal"
+        "meiwaPortal": "Meiwa Portal",
+        "risnov": "Risnov"
       }
     },
     "technologySet": {
