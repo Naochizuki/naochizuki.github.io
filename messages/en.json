@@ -90,10 +90,13 @@
         "desktop": "Desktop Application Development",
         "frontend": "Frontend",
         "game": "Game Development",
+        "httpClient": "HTTP Client",
+        "iconLibraries": "Icon Libraries",
         "mobile": "Mobile Application Development",
         "note": "Some micro-frameworks may not be included",
         "productivityBoosts": "Productivity Boosts",
-        "uiFramework": "UI Framework"
+        "uiFramework": "UI Framework",
+        "webServer": "Web Server"
       }
     }
   },

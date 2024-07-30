@@ -90,10 +90,13 @@
         "desktop": "Pengembangan Aplikasi Desktop",
         "frontend": "Frontend",
         "game": "Pengembangan Game",
+        "httpClient": "Klien HTTP",
+        "iconLibraries": "Library Ikon",
         "mobile": "Pengembangan Aplikasi Mobile",
         "note": "Beberapa mikro-framework mungkin tidak termasuk",
         "productivityBoosts": "Produktivitas",
-        "uiFramework": "Framework UI"
+        "uiFramework": "Framework UI",
+        "webServer": "Server Web"
       }
     }
   },

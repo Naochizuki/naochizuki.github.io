@@ -90,10 +90,13 @@
         "desktop": "デスクトップアプリケーションの開発",
         "frontend": "フロントエンド",
         "game": "ゲーム開発",
+        "httpClient": "HTTP クライアント",
+        "iconLibraries": "アイコンライブラリ",
         "mobile": "モバイルアプリケーションの開発",
         "note": "いくつかのマイクロフレームワークは含まれていないかもしれません",
         "productivityBoosts": "生産性",
-        "uiFramework": "UIフレームワーク"
+        "uiFramework": "UIフレームワーク",
+        "webServer": "ウェブサーバー"
       }
     }
   },

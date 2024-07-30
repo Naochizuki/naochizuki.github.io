@@ -1,6 +1,6 @@
-'use client';
+'use client'
 
-import { IconType } from 'react-icons';
+import { IconType } from 'react-icons'
 import {
   SiJavascript,
   SiTypescript,
@@ -28,9 +28,14 @@ import {
   SiMantine,
   SiChakraui,
   SiTailwindcss,
-} from 'react-icons/si';
-import { FaSourcetree } from 'react-icons/fa';
-import { IoLogoPwa } from 'react-icons/io5';
+  SiInertia,
+  SiPusher,
+  SiMicrosoftsqlserver,
+  SiAxios,
+  SiApache,
+} from 'react-icons/si'
+import { FaFontAwesomeAlt, FaSourcetree } from 'react-icons/fa'
+import { IoLogoPwa } from 'react-icons/io5'
 
 export type TechnologyCategory =
   | 'backend'
@@ -41,15 +46,18 @@ export type TechnologyCategory =
   | 'productivity boost'
   | 'mobile'
   | 'games'
-  | 'desktop';
+  | 'desktop'
+  | 'icon libraries'
+  | 'http client'
+  | 'web server'
 
 export type Technology = {
-  name: string;
-  icon: IconType;
-};
+  name: string
+  icon: IconType
+}
 
 export const Technologies: {
-  [key in TechnologyCategory]: Technology[];
+  [key in TechnologyCategory]: Technology[]
 } = {
   backend: [
     {
@@ -72,6 +80,10 @@ export const Technologies: {
       name: 'Laravel',
       icon: SiLaravel,
     },
+    {
+      name: 'Pusher',
+      icon: SiPusher,
+    },
   ],
   frontend: [
     {
@@ -86,6 +98,10 @@ export const Technologies: {
       name: 'VueJS',
       icon: SiVuedotjs,
     },
+    {
+      name: 'InertiaJS',
+      icon: SiInertia,
+    },
   ],
   database: [
     {
@@ -95,6 +111,10 @@ export const Technologies: {
     {
       name: 'MongoDb',
       icon: SiMongodb,
+    },
+    {
+      name: 'Microsoft SQL Server',
+      icon: SiMicrosoftsqlserver,
     },
   ],
   cicd: [
@@ -185,26 +205,44 @@ export const Technologies: {
       icon: SiElectron,
     },
   ],
-};
+  'icon libraries': [
+    {
+      name: 'FontAwesome',
+      icon: FaFontAwesomeAlt,
+    },
+  ],
+  'http client': [
+    {
+      name: 'Axios',
+      icon: SiAxios
+    }
+  ],
+  'web server': [
+    {
+      name: 'Apache',
+      icon: SiApache
+    }
+  ]
+}
 
 export const splitTechnologies = (srcArray: Technology[], technologies?: string[]) => {
-  const array = srcArray.filter((item) => technologies?.includes(item.name));
+  const array = srcArray.filter((item) => technologies?.includes(item.name))
 
-  const arrLength = array.length;
-  const isEvenChunk = arrLength % 2 === 0;
+  const arrLength = array.length
+  const isEvenChunk = arrLength % 2 === 0
 
-  let chunk = 4;
+  let chunk = 4
   if (isEvenChunk) {
-    chunk = arrLength / 2;
+    chunk = arrLength / 2
   } else if (arrLength <= 5 && arrLength > 2) {
-    chunk = 3;
+    chunk = 3
   }
 
-  let i = 0;
-  let j = 0;
-  const temporary = [];
+  let i = 0
+  let j = 0
+  const temporary = []
   for (i = 0, j = array.length; i < j; i += chunk) {
-    temporary.push(array.slice(i, i + chunk));
+    temporary.push(array.slice(i, i + chunk))
   }
-  return temporary;
-};
+  return temporary
+}

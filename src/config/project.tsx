@@ -28,7 +28,21 @@ export const Projects: {
     description: 'descriptions.meiwaPortal',
     objectPosition: 'right 20%',
     isMobile: mobileBreakpointsMap,
-    technologies: ['VueJS', 'Laravel'],
+    technologies: [
+      'VueJS',
+      'Laravel',
+      'TailwindCSS',
+      'InertiaJS',
+      'Pusher',
+      'Microsoft SQL Server',
+      'VSCode',
+      'Git',
+      'SourceTree',
+      'FontAwesome',
+      'PHP',
+      'Axios',
+      'Apache',
+    ],
   },
 }
 
