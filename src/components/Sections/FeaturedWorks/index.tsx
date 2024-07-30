@@ -39,9 +39,9 @@ const FeaturedWorksSection = () => {
           <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
             <FeaturedCard
               idx={project.idx}
-              title={project.title}
+              title={t(project.title)}
               src={project.src}
-              description={project.description}
+              description={t(project.description)}
               height={project.height}
               objectPosition={project.objectPosition}
               isMobile={useBreakpointValue(project.isMobile)}

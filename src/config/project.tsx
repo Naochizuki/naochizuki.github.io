@@ -24,9 +24,8 @@ export const Projects: {
     height: { base: '130px', md: '225px', '2xl': '300px' },
     src: '/works/tobira/IphoneX-tobira.webp',
     idx: 1,
-    title: 'Meiwa Portal',
-    description:
-      'Website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Dikembangkan menggunakan Vue.js dan Laravel, serta beberapa library tambahan lainnya.',
+    title: 'title.meiwaPortal',
+    description: 'descriptions.meiwaPortal',
     objectPosition: 'right 20%',
     isMobile: mobileBreakpointsMap,
     technologies: ['VueJS', 'Laravel'],

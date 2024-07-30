@@ -1,7 +1,12 @@
 {
   "About": {
     "detail": {
+      "description": "I am a final-year undergraduate student in <major>Computer Science</major> at <university>Sebelas Maret University</university>. I have completed several internships as a <role>Software Engineer</role>, including at <meiwa>Meiwa Industry Co., Ltd</meiwa>. So, you could say I have professional coding experience for {years} years.",
       "fullArsenal": "Intip semua keterampilan yang aku punya!",
+      "technologyDescription": "Ini beberapa teknologi yang sering aku pakai, ibaratnya sudah jadi temen <coffee>ngopi</coffee> sehari-hari <icon></icon>.",
+      "tooltip": {
+        "meiwa": "Akhirnya aku bisa merasakan hidup di Jepang! Buatku, ini mimpi yang jadi nyata, apalagi sebagai mahasiswa dengan kondisi ekonomi pas-pasan"
+      },
       "whatIDo": "Apa yang aku lakukan?"
     },
     "skillSet": {
@@ -20,9 +25,42 @@
   },
   "Experience": {
     "experienceTab": {
-      "present": "Sekarang"
+      "name": {
+        "lppm": "LPPM",
+        "meiwaIndustry": "Meiwa Industry Co., Ltd.",
+        "startupCampus": "Startup Campus"
+      },
+      "position": {
+        "backendTrackParticipants": "Backend Track Participants",
+        "juniorSoftwareEngineer": "Junior Software Engineer",
+        "softwareEngineer": "Software Engineer"
+      },
+      "present": "Sekarang",
+      "roles": {
+        "sc": {
+          "role1": "Mengikuti pelatihan intensif dalam bidang backend development menggunakan bahasa pemrograman Python dan framework Django. Pelatihan ini mencakup teknik-teknik pengembangan backend yang efisien dan best practices dalam penggunaan Django.",
+          "role2": "Membangun sistem backend berbasis API yang dapat diintegrasikan dengan UI yang disiapkan oleh Startup Campus. Setelah menyelesaikan pelatihan ini, saya menerima sertifikat sebagai bukti partisipasi dan pencapaian."
+        },
+        "meiwa": {
+          "role1": "Membangun website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Website ini dirancang untuk menyatukan berbagai aplikasi perusahaan yang sebelumnya memiliki tampilan dan tautan yang berbeda-beda, sehingga menciptakan pengalaman yang lebih konsisten dan efisien bagi pengguna.",
+          "role2": "Membuat komponen inti UI seperti form input, tombol, tab, dan lainnya dengan menggunakan <primevue>PrimeVue</primevue> (Framework UI). Komponen-komponen ini memastikan konsistensi tampilan di seluruh website, sehingga desain dan fungsionalitasnya selalu seragam.",
+          "role3": "Mengembangkan fitur untuk memantau status barang produksi yang sedang dalam proses pengecatan.",
+          "role4": "Mengembangkan fitur FMEA (Failure Mode and Effects Analysis) untuk mengidentifikasi dan mencegah potensi kegagalan atau cacat dalam proses produksi. Fitur ini membantu memastikan kualitas produk tetap tinggi dan meminimalkan risiko kesalahan."
+        },
+        "risnov": {
+          "role1": "Membuat ulang website menggunakan framework Laravel dan memenuhi requirement terbaru, termasuk update versi PHP yang digunakan.",
+          "role2": "Membangun Homepage yang menampilkan preview artikel terbaru, serta halaman khusus untuk membaca artikel secara lengkap.",
+          "role3": "Menampilkan data <rida>RIDA</rida> (Riset dan Inovasi dalam Data) dengan visualisasi dalam bentuk chart."
+        }
+      },
+      "subDetail": {
+        "internship": "Intership",
+        "msib": "MSIB Kampus Merdeka",
+        "uns": "Universitas Sebelas Maret"
+      }
     },
     "main": {
+      "description": "Sejak tahun 2022, aku memulai magang pertama untuk mengasah keterampilan dan menambah pengalaman. Meskipun masih terbilang singkat, aku sangat berterima kasih kepada perusahaan-perusahaan yang telah memberikan kesempatan untuk berkembang. Pengalaman ini sangat berharga dan memberikan fondasi kuat dalam perjalanan karierku.",
       "header": "Pengalaman Kerjaku."
     }
   },
@@ -33,7 +71,13 @@
     },
     "main": {
       "description": "Lihat beberapa proyek yang telah aku kerjakan saat freelancing, proyek perusahaan, dan juga studi kasus.",
-      "header": "Beberapa Proyekku."
+      "descriptions": {
+        "meiwaPortal": "Website internal untuk memantau pekerjaan di pabrik dan mempermudah pegawai dalam mengakses informasi. Dikembangkan menggunakan Vue.js dan Laravel, serta beberapa library tambahan lainnya."
+      },
+      "header": "Beberapa Proyekku.",
+      "title": {
+        "meiwaPortal": "Meiwa Portal"
+      }
     },
     "technologySet": {
       "modal": {
@@ -54,6 +98,7 @@
     }
   },
   "GetInTouch": {
+    "goodBye": "Meskipun aku agak introvert, aku tetap akan membalas pesan selama energi interaksi sosialku masih ada. Coding, pekerjaan, film, atau bahkan hal-hal terkait anime, semuanya oke. Jadi, jangan ragu untuk menghubungiku di media sosial atau kirim <email>email</email>.",
     "sayHi": "Sapa aku!"
   },
   "Menu": {
@@ -83,11 +128,15 @@
     "september": "{format, select, long {September} short {Sep} other {September}}"
   },
   "Sidebar": {
+    "basugandhi": "Basugandhi",
     "getInTouch": "Hubungi aku, ya!",
     "hello": "Ooh, hai yang di sana! Aku",
+    "jobs": {
+      "softwareEngineer": "Software Engineer"
+    },
     "me": "Aku seorang software engineer yang fokus di backend API dan integrasi frontend. Akhir-akhir ini, aku juga sedang seru-serunya belajar UI/UX dan React.",
     "nickname": "Tapi panggil saja Babas atau Nao. Itu lebih asyik . . .",
-    "thanks1": "Hai! Senang sekali kamu mengunjungi situs pribadiku, ",
-    "thanks2": "terima kasih!"
+    "sasangka": "Sasangka Murti",
+    "thanks": "Hai! Senang sekali kamu mengunjungi situs pribadiku, <thank>terima kasih!</thank>"
   }
 }
